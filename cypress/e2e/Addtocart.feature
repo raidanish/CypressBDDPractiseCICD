@@ -1,10 +1,7 @@
 Feature: practice BDD
 
     Scenario: Testing with BDD
-    #Given I went to URL
-    When I enter username and password
-    And I click on login button
-    Then User will be login successful
+    When User login successfull 
 
     And User select a product
     Then User click the cart button icon
