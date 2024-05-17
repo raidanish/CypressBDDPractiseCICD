@@ -1,0 +1,21 @@
+{
+  "name": "test_perparation_cypress",
+  "version": "1.0.0",
+  "description": "This is for Interview prep",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run --config pageLoadTimeout=100000",
+    "runtests" : "npm run test --"
+  },
+  "author": "Waqar",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.9.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e"
+  }
+}
