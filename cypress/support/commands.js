@@ -12,6 +12,7 @@
 Cypress.Commands.add('LoginApp', () =>
 
     {
+        navigate
         cy.visit('https://www.saucedemo.com/v1/');
 
         cy.get('[data-test="username"]').type('standard_user')
